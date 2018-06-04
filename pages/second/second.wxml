@@ -1,0 +1,106 @@
+
+<view class="second_wrap">
+  <!-- <view class="second_header">商品详情</view> -->
+  <view class="second_content" style="padding-bottom:{{paddingBottom}}px">
+  
+    <swiper indicator-dots="true"
+  autoplay="true" interval="5000" duration="500">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="750" height="750"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="second_content_detail">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+      <view class="second_content_detail_title">{{second_content_detail_title}}</view>
+      <view class="second_content_detail_price mt20">{{second_content_detail_price}} 元</view>
+      
+      <view class=" mt20 clearfix ">
+        <view class='fl second_content_detail_num'>数量:</view>
+        <view class='fr clearfix inputNum'>
+          <view class=" fl mr25 {{buyNum==1?'numBtnGrey':'minus-btn'}}" bindtap='minus'>-</view>
+          <!-- <view class='fl num' name="radio2">2</view> -->
+          <input class="fl num " name="inputNum" value='{{buyNum}}' disabled />
+          <view class=" fl ml25 {{yesMax==true?'numBtnGrey':'plus-btn'}}" bindtap='plus'>+</view>
+        </view>
+      </view>
+      
+      <view class="mt20">
+        <view class="second_content_detail_way">
+          <radio-group bindchange="radioChange" name="radio">
+          <label class="radio_label mr25" wx:for="{{radioItems}}" wx:key="{{item.value}}">
+              <radio value="{{item.value}}" checked="{{item.checked}}" disabled="{{item.disabled}}"/>
+              <text class="text">{{item.name}}</text>
+          </label>
+        </radio-group>
+        </view>
+      </view>
+      <view class="mt20 expressage {{expressageType==1?'none':''}}">
+        <view class="mt20 clearfix inputName">
+          <label class='fl'>
+            <i class="fl">真实姓名</i>
+            <em class="fl ml05">*</em>
+          </label>
+          <input class="fl ml25 text1" name="inputName" value="{{inputName}}
+          placeholder-style="color:#b9b9b9"
+          placeholder="清关必备，请输入真实姓名" />
+        </view>
+        <view class="mt20 clearfix inputIdCard">
+          <label class='fl'>
+            <i class="fl">身份证</i>
+            <em class="fl ml05">*</em>
+          </label>
+          <input class="fl ml25 text1" name="inputIdCard" type="idcard" value="{{inputIdCard}}
+          placeholder-style="color:#b9b9b9"
+          placeholder="请输入身份证号" />
+        </view>
+        
+        <view class="mt20 clearfix inputPerson">
+          <label class='fl'>
+            <i class="fl">收货人</i>
+            <em class="fl ml05">*</em>
+          </label>
+          <input class="fl ml25 text1" name="inputPerson" value="{{inputPerson}}"   
+          bindfocus="bindfocus"
+          bindblur="bindblur"
+          placeholder-style="color:#b9b9b9"
+          placeholder="请输入收货人" />
+        </view>
+        <view class="mt20 clearfix inputPhone">
+          <label class='fl'>
+            <i class="fl">电话</i>
+            <em class="fl ml05">*</em>
+          </label>
+          <input class="fl ml25 text1" name="inputPhone"  value="{{inputPhone}}"
+          bindfocus="bindfocus"
+          bindblur="bindblur"
+          placeholder-style="color:#b9b9b9"
+          placeholder="请输入电话" />
+        </view>
+        <view class="mt20 clearfix inputAddress">
+          <label class='fl'>
+            <i class="fl">地址</i>
+            <em class="fl ml05">*</em>
+          </label>
+          <input class="fl ml25 text1" name="inputAddress"  value="{{inputAddress}}"
+          bindfocus="bindfocus"
+          bindblur="bindblur"
+          placeholder-style="color:#b9b9b9"
+          placeholder="请输入地址" />
+        </view>
+      </view>
+      <view class="mt20 getAddress" bindtap="getAddress">
+      <image class="mt20" bindtap="getAddress" src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/%E8%8E%B7%E5%8F%96%E5%9C%B0%E5%9D%80@2x.png'></image>
+          <!-- <button type="primary" >获取地址</button> -->
+        </view>
+      <view class="mt20">
+        <button type="primary" formType="submit">立即购买</button>
+      </view>
+       </form>
+    </view>
+ 
+
+
+  </view>
+</view>

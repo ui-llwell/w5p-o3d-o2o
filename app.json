@@ -1,0 +1,36 @@
+{
+  "pages":[
+   "pages/noshop/noshop",
+    "pages/index/index",
+    "pages/second/second",
+    "pages/myOrder/myOrder"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#018afe",
+    "navigationBarTitleText": "流连优选",
+    "navigationBarTextStyle":"light"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#4890df",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "static/img/扫码下单@3x.png",
+        "iconPath": "static/img/扫码下单-未触发@3x.png",
+        "pagePath": "pages/index/index",
+        "text": "扫码下单"
+      },
+      {
+        "selectedIconPath": "static/img/我的订单-触发@3x.png",
+        "iconPath": "static/img/我的订单-未触发@3x.png",
+        "pagePath": "pages/myOrder/myOrder",
+        "text": "我的订单"
+      }
+    ]
+  }
+  
+}

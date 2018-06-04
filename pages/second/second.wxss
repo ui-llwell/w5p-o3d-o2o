@@ -1,0 +1,109 @@
+/**index.wxss**/
+.second_wrap{
+  width: 750rpx;
+  height: 100%;
+  /* background-color: #efeff4; */
+}
+.second_header{
+  height: 60rpx;
+  width: 750rpx;
+  border-bottom: 1px solid #cbcbcb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30rpx;
+  color: #999;
+  
+}
+.second_content swiper{
+  width: 750rpx;
+  height: 640rpx;
+}
+.second_content swiper swiper-item image{
+  width: 750rpx;
+  height: 640rpx;
+}
+.second_content_detail{
+  margin-top: 10rpx;
+  padding: 20rpx 40rpx 40rpx;
+  box-shadow: 0px -4px 4px #f6f1f1;
+}
+.second_content_detail_title,.second_content_detail_price{
+  color:#646464;
+  font-size: 35rpx;
+}
+.second_content_detail_price{
+  color: red;
+}
+.second_content_detail_expressage,.second_content_detail_num,.num{
+  color:#b9b9b9;
+  font-size: 30rpx;
+}
+
+.second_content_detail .inputNum input{
+  width: 43rpx;
+  text-align:center;
+}
+.minus-btn,.plus-btn{
+  font-size: 30rpx;
+    padding: 0rpx 14rpx 4rpx; 
+    color:#fff;
+   background: #70cf6a;
+   border-radius: 26rpx; 
+   position: auto;
+   margin-top:4rpx;
+
+}
+.numBtnGrey{
+  color:#b9b9b9; 
+  font-size: 30rpx;
+  padding: 0rpx 14rpx 4rpx;
+   background: #d8d8d8;
+   border-radius: 26rpx; 
+   position: auto;
+   margin-top:4rpx;
+}
+/* .second_content_detail radio{ transform:scale(.6)  } */
+
+.second_content_detail .text {
+  color:#b9b9b9;
+  font-size: 30rpx;
+}
+.second_content_detail .expressage .inputName label,
+.second_content_detail .expressage .inputIdCard label,
+.second_content_detail .expressage .inputPerson label,
+.second_content_detail .expressage .inputPhone label,
+.second_content_detail .expressage .inputAddress label{
+  font-size: 33rpx;
+  width: 160rpx;
+}
+.second_content_detail .expressage .inputName em,
+.second_content_detail .expressage .inputIdCard em,
+.second_content_detail .expressage .inputPerson em,
+.second_content_detail .expressage .inputPhone em,
+.second_content_detail .expressage .inputAddress em{
+  color: red;
+}
+.second_content_detail .expressage .inputName input,
+.second_content_detail .expressage .inputIdCard input,
+.second_content_detail .expressage .inputPerson input,
+.second_content_detail .expressage .inputPhone input,
+.second_content_detail .expressage .inputAddress input{
+  width: 480rpx;
+  font-size: 30rpx; 
+  color:#b9b9b9; 
+}
+.getAddress {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+}
+.getAddress image{
+  width: 50%;
+  height: 50%;
+}
+.pb450{
+  padding: 450rpx;
+}
+
