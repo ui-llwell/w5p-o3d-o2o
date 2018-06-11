@@ -70,6 +70,8 @@ left: 420rpx;
   font-size: 32rpx;
   line-height: 1;
   color: #777;
+  margin-top:20rpx;
+
 } 
  .code_record_title em{
   padding: 1rpx 6rpx;
@@ -78,7 +80,7 @@ left: 420rpx;
 } 
 .code_record_content{
   height: 90%;
-  margin-top: 20rpx;
+  margin-top: 30rpx;
   overflow-y: auto;
 }
 .code_record_content{
@@ -108,4 +110,14 @@ left: 420rpx;
 .code_record_content .btn image{
   width: 230rpx;
   height: 230rpx;
+}
+.contact{
+  position:absolute;
+  top:350rpx;
+  right:20rpx;
+   width: 100rpx;
+   height: 100rpx;
+   background: url("http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/CustomerServices.png") no-repeat center ;
+  background-size: 100% 100%;
+  
 }

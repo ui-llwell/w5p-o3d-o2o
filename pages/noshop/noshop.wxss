@@ -109,3 +109,14 @@ left: 420rpx;
   width: 230rpx;
   height: 230rpx;
 }
+
+.contact{
+  position:absolute;
+  top:350rpx;
+  right:20rpx;
+   width: 100rpx;
+   height: 100rpx;
+   background: url("http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/CustomerServices.png") no-repeat center ;
+  background-size: 100% 100%;
+  
+}

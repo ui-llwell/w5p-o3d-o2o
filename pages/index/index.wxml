@@ -18,6 +18,10 @@
         <view class="code_record_title">
           <em></em>购物指南
         </view>
+        <view class='contact'>
+      <!-- <button open-type="contact" class="mini-btn" type="default" size="mini">进入客服会话</button> -->
+      <contact-button size="40" session-from="weapp" type="default-dark" style='opacity:0'></contact-button>
+      </view>
         <view class="code_record_content">
           <view class=' nu'>
             <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/购物指南1@3x.png'></image>

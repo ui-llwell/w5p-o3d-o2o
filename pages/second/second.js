@@ -135,6 +135,7 @@ Page({
     var that = this;
     wx.getSetting({
       success(res) {
+        console.log('成功输出')
         if (!res.authSetting['scope.address']) {
           wx.authorize({
             scope: 'scope.address',
@@ -151,15 +152,16 @@ Page({
             }
           })
         } else {
-          wx.chooseAddress({
-            success: function (res) {
-              that.setData({
-                inputPerson: res.userName,
-                inputAddress: res.provinceName + res.cityName + res.countyName + res.detailInfo,
-                inputPhone: res.telNumber,
-              });
-            }
-          })
+          console.log('失败输出')
+          // wx.chooseAddress({
+          //   success: function (res) {
+          //     that.setData({
+          //       inputPerson: res.userName,
+          //       inputAddress: res.provinceName + res.cityName + res.countyName + res.detailInfo,
+          //       inputPhone: res.telNumber,
+          //     });
+          //   }
+          // })
         }
       }
     })
@@ -244,9 +246,9 @@ Page({
   },
   bindfocus:function(e){
     console.log('e',e)
-    this.setData({
-      paddingBottom:e.detail.height+200
-    })
+    // this.setData({
+    //   paddingBottom:e.detail.height+200
+    // })
   },
   bindblur:function(e){
     // this.setData({
