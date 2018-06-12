@@ -1,0 +1,37 @@
+<view class='goodsDetail'>
+  <view class="order_list">
+    <view class="order_list_li" wx:for="{{orderList}}" bindtap="logistics">
+      <view class="order_list_li_mes">
+        <view class="order_list_li_mes_img">
+          <image src='{{item.slt}}'></image>
+        </view>
+        <view class="order_list_li_mes_text">
+          <view class='order_list_li_mes_title'>{{item.skuBillName}}</view>
+        </view>
+        <view class='order_list_li_mes_price'>
+          <view>¥{{item.skuUnitPrice}}</view>
+          <view class=''>x {{item.quantity}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='totalPrice'>订单支付总金额：¥{{totalPrice}}</view>
+  <view class='address clearfix'>
+    <image class='address_img' src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/%E4%BD%8D%E7%BD%AEicon.png'></image>
+    <view class='fl address_right'>
+      <view class='addr_name'>联系人：{{addr_name}}</view>
+      <view class='addr_tel'>联系电话：{{addr_tel}}</view>
+      <view class='addr_addr'>地址：{{addr_addr}}</view>
+    </view>
+  </view>
+  <view class='aboutOrder'>
+    <view>订单编号：{{billId}}</view>
+    <view>下单时间：{{createTime}}</view>
+    <view>支付时间：{{payTime}}</view>
+  </view>
+   <view class='checkLogistics'>
+    <button type="primary" bindtap='checkLogistics'>查看物流信息</button>
+  </view> 
+
+  
+</view>

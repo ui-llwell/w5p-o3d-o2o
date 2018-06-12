@@ -19,7 +19,7 @@ Page({
           // console.log('kaka')
         }else{
           wx.showModal({
-            title: "哎呀",
+            title: "温馨提示",
             content: "请重新扫描门店二维码",
             showCancel: false,
             confirmText: "确定"
@@ -34,5 +34,5 @@ Page({
   },
   onLoad: function () {
     console.log('onLoad')    
-  }
+  },
 })

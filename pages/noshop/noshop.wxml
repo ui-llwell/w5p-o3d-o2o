@@ -30,7 +30,6 @@
       <!-- <button open-type="contact" class="mini-btn" type="default" size="mini">进入客服会话</button> -->
       <contact-button size="40" session-from="weapp" type="default-dark" style='opacity:0'></contact-button>
       </view>
-
         <view class="code_record_content">
           <view class='nu1 nu'>
             <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/购物指南1@3x.png'></image>
@@ -45,7 +44,7 @@
             3、支付完成购买
           </view>
           <view class='btn'>
-          <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/扫码icon.png' bindtap="scanCodeShop"></image>
+          <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/%E6%89%AB%E7%A0%81icon.png' bindtap="scanCodeShop"></image>
           </view>
         </view>
         

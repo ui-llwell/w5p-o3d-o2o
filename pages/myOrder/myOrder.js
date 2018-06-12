@@ -39,5 +39,37 @@ Page({
 
  
    
+  },
+  logistics:function(e){
+    console.log("查看详情");
+    console.log(e.currentTarget.dataset.billid);
+    app.Ajax(
+      'Order',
+      'POST',
+      'GetOrder',
+      {
+        orderId: e.currentTarget.dataset.billid, 
+        token: wx.getStorageSync('token')
+        },
+      function (json) {
+        if (json.success) {
+          var ttt = json.data;
+          // console.log('ttt',ttt)
+          wx.navigateTo({
+            url: '../goodsDetail/index?goodsMes=' + JSON.stringify(ttt)
+          })
+          
+        } else {
+          wx.showModal({
+            title: "温馨提示",
+            content: "请重新选择商品",
+            showCancel: false,
+            confirmText: "确定"
+          })
+        }
+      }
+    );
+
+
   }
 })

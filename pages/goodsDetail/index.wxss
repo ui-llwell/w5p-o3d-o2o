@@ -1,0 +1,109 @@
+page{
+  height: 100%;
+  background: #f2f2f2;
+}
+.order_list{
+  width: 100%;
+  height: 100%;
+}
+.order_list_li{
+  background: #fff;
+  padding: 4% 4%;
+  /* border: 1px dashed #f2f2f2; */
+  margin: 5rpx 0;
+  /* background: red; */
+}
+.order_list_li_number{
+  padding: 0 0 2% 0;
+  font-size: 26rpx;
+  color: #a6a6a6;
+  /* border-bottom: 1rpx solid #f2f2f2;  */
+}
+.order_list_li_mes{
+  overflow: hidden;
+  padding: 4% 0 0 0;
+}
+.order_list_li_mes_img{
+  width: 17%;
+  height: 120rpx;
+  float: left;
+}
+.order_list_li_mes_img image{
+  width: 100%;
+  height: 100%;
+}
+.order_list_li_mes_text{
+  width: 53%;
+  float: left;
+  margin-left: 4%;
+}
+.order_list_li_mes_time{
+  font-size: 20rpx;
+  color: #cdcdcd;
+  padding: 0 0 2% 0;
+}
+.order_list_li_mes_title{
+  font-size: 26rpx;
+}
+.order_list_li_mes_price{
+  text-align: right;
+  font-size: 26rpx;
+  width: 20%;
+  float: right;
+  color: #777;
+}
+.totalPrice{
+  font-size: 30rpx;
+  text-align: right;
+  background: #fff;
+  color: #555;
+  padding: 10rpx 35rpx;
+  /* border: 1px dashed #f2f2f2; */
+  margin: 0 0 5rpx 0;
+}
+.address{
+  padding:4% 4%;
+  font-size: 26rpx;
+  background: #fff;
+  color: #777;
+  /* padding: 10rpx 35rpx; */
+  /* border: 1px dashed #f2f2f2; */
+  margin: 0 0 5rpx 0;
+}
+.address_right{
+  width:570rpx;
+  margin-left: 10rpx;
+}
+.address_img{
+  width:60rpx;
+  height:60rpx;
+  float:left;
+  padding:30rpx 25rpx;
+
+}
+.addr_name{
+  font-size: 30rpx;
+  color: #333;
+}
+.addr_tel{
+  color: #333;
+  margin: 5rpx 0;
+}
+.aboutOrder{
+  padding:4% 4%;
+  font-size: 26rpx;
+  background: #fff;
+  color: #777;
+  /* padding: 10rpx 35rpx; */
+  /* border: 1px dashed #f2f2f2; */
+  margin: 0 0 5rpx 0;
+}
+.aboutOrder view{
+  line-height: 1.7;
+}
+.checkLogistics{
+  position: fixed;
+  bottom: 0;
+  width: 92%;
+  padding: 4%;
+}

@@ -1,0 +1,10 @@
+<view class="logistics_wrap">
+  <view class="logistics_list">
+    <view class="logistics_list_li" wx:for="{{logisticsList}}" >
+      <view class="logistics_list_li_status">{{item.context}}</view>
+      <view class="logistics_list_li_time">{{item.ftime}}</view>
+      
+    </view>
+  </view>
+
+</view>

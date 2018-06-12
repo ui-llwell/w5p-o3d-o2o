@@ -153,15 +153,15 @@ Page({
           })
         } else {
           console.log('失败输出')
-          // wx.chooseAddress({
-          //   success: function (res) {
-          //     that.setData({
-          //       inputPerson: res.userName,
-          //       inputAddress: res.provinceName + res.cityName + res.countyName + res.detailInfo,
-          //       inputPhone: res.telNumber,
-          //     });
-          //   }
-          // })
+          wx.chooseAddress({
+            success: function (res) {
+              that.setData({
+                inputPerson: res.userName,
+                inputAddress: res.provinceName + res.cityName + res.countyName + res.detailInfo,
+                inputPhone: res.telNumber,
+              });
+            }
+          })
         }
       }
     })

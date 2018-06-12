@@ -36,7 +36,7 @@
             3、支付完成购买
           </view>
           <view class='btn'>
-          <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/%E6%89%AB%E7%A0%81%E8%B4%AD%E7%89%A9@3x.png' bindtap="toSweepOrder"></image>
+          <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/%E6%89%AB%E7%A0%81iconlv.png' bindtap="toSweepOrder"></image>
           </view>
         </view>
         

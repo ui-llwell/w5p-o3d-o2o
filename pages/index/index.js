@@ -36,7 +36,7 @@ Page({
       function (json) {
         if (json.success) {
           var ttt = json.data;
-          console.log('ttt',ttt)
+          // console.log('ttt',ttt)
           wx.navigateTo({
             url: '../second/second?goodsMes=' + JSON.stringify(ttt)
           })
@@ -49,7 +49,7 @@ Page({
         } else {
           console.log('请重新扫商品码');
           wx.showModal({
-            title: "注意",
+            title: "温馨提示",
             content: "请重新扫商品码",
             showCancel: false,
             confirmText: "确定"
