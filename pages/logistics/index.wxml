@@ -1,4 +1,5 @@
 <view class="logistics_wrap">
+  <view class='courierNumber'>快递单号：{{courierNumber}}</view>
   <view class="logistics_list">
     <view class="logistics_list_li" wx:for="{{logisticsList}}" >
       <view class="logistics_list_li_status">{{item.context}}</view>

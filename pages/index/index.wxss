@@ -33,13 +33,14 @@
   height: 100%; 
 }
 .header_card_cont{
-  width: 400rpx;
+  width: 80%;
   position: absolute;
   top: 150rpx;
   left: 0;
   right: 0;
   margin: auto;
   display: flex;
+  justify-content:center;
   align-items: center;
 }
 .header_card_cont image{
@@ -51,7 +52,7 @@
   height: 68rpx;
 position: absolute;
 top:100rpx;
-left: 420rpx;
+right: 50rpx;
 }
 
 .code_record{

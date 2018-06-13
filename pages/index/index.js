@@ -40,14 +40,14 @@ Page({
           wx.navigateTo({
             url: '../second/second?goodsMes=' + JSON.stringify(ttt)
           })
-          console.log("以下已经扫码到商品页了")
+          // console.log("以下已经扫码到商品页了")
           var number = json.data.goodsname;
           var date = app.getNowFormatDate();
           var buyOrder = wx.getStorageSync('buyOrder') || []
           buyOrder.unshift({ number, date })
           wx.setStorageSync('buyOrder', buyOrder)
         } else {
-          console.log('请重新扫商品码');
+          // console.log('请重新扫商品码');
           wx.showModal({
             title: "温馨提示",
             content: "请重新扫商品码",

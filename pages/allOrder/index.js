@@ -25,14 +25,20 @@ Page({
       function (json) {
         if (json.success) {
           // console.log(json)
+          
+
           that.setData({
             orderList: json.data.orderList,
           })
+          
         } else {
           console.log('请重新获取订单');
         }
       }
     );
+
+ 
+   
   },
   logistics:function(e){
     // console.log("查看详情");
@@ -63,5 +69,7 @@ Page({
         }
       }
     );
+
+
   }
 })

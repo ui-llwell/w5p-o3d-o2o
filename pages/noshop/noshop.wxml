@@ -15,9 +15,7 @@
           <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/地图-icon@3x.png' ></image>请扫描门店二维码
           <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/流连logo@3x.png' class='logo'></image>
         </view>
-        
       </view>
-        
     </view>
 
     <view class="code_record">
@@ -25,7 +23,6 @@
         <view class="code_record_title">
           <em></em>购物指南
         </view>
-        
       <view class='contact'>
       <!-- <button open-type="contact" class="mini-btn" type="default" size="mini">进入客服会话</button> -->
       <contact-button size="40" session-from="weapp" type="default-dark" style='opacity:0'></contact-button>
@@ -47,8 +44,9 @@
           <image src='http://ecc-product.oss-cn-beijing.aliyuncs.com/xcx/%E6%89%AB%E7%A0%81icon.png' bindtap="scanCodeShop"></image>
           </view>
         </view>
-        
       </view>
-        
+    </view>
+    <view class='xqbtn' bindtap='checkAllOrder'>
+      订单详情
     </view>
   </view>

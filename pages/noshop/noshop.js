@@ -24,7 +24,7 @@ Page({
             showCancel: false,
             confirmText: "确定"
           })
-          console.log('重新扫码')
+          // console.log('重新扫码')
         }
       },
       fail: (res) => {
@@ -33,6 +33,11 @@ Page({
     })
   },
   onLoad: function () {
-    console.log('onLoad')    
+    // console.log('onLoad')    
   },
+  checkAllOrder() {
+    wx.navigateTo({
+      url: '../allOrder/index'
+    })
+  }
 })

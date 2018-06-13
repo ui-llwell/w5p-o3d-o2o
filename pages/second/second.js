@@ -71,7 +71,7 @@ Page({
     }
   },
   radioChange: function (e) {
-    console.log('radio发生change事件，携带value值为：', e.detail.value)
+    // console.log('radio发生change事件，携带value值为：', e.detail.value)
     this.setData({
       expressageType: e.detail.value
     });
@@ -86,7 +86,7 @@ Page({
     });
   },
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value)
+    // console.log('form发生了submit事件，携带数据为：', e.detail.value)
     if (e.detail.value.radio==1){
       this.toSuccessBuy(e.detail.value);
     }else{
@@ -100,7 +100,7 @@ Page({
           wx.setStorageSync('inputPhone', ccc.inputPhone),
         this.toSuccessBuy(e.detail.value);
       }else{
-        console.log("请添必填项")
+        // console.log("请添必填项")
         wx.showModal({
           title: "注意",
           content: "请输入完整信息",
@@ -111,7 +111,7 @@ Page({
     }
   },
   formReset: function (e) {
-    console.log('form发生了reset事件，携带数据为：', e.detail.value)
+    // console.log('form发生了reset事件，携带数据为：', e.detail.value)
     this.setData({
       chosen: ''
     })
@@ -135,7 +135,7 @@ Page({
     var that = this;
     wx.getSetting({
       success(res) {
-        console.log('成功输出')
+        // console.log('成功输出')
         if (!res.authSetting['scope.address']) {
           wx.authorize({
             scope: 'scope.address',
@@ -152,7 +152,7 @@ Page({
             }
           })
         } else {
-          console.log('失败输出')
+          // console.log('失败输出')
           wx.chooseAddress({
             success: function (res) {
               that.setData({
@@ -191,8 +191,8 @@ Page({
             'signType': 'MD5',
             'paySign': json.data.paySign,
             'success': function (res) {
-              console.log("ok");
-              console.log(res);
+              // console.log("ok");
+              // console.log(res);
               that.finishPaySend(json.data.billId);
               wx.navigateBack({
                 url: '../index/index'
@@ -220,7 +220,7 @@ Page({
     );
   },
   finishPaySend:function(billId){
-      console.log(billId);
+      // console.log(billId);
       var that = this;
       app.Ajax(
         'Payment',
@@ -231,7 +231,7 @@ Page({
           if (json.success) {
             console.log('yesssss')
           } else {
-            console.log(that.data.payTime)
+            // console.log(that.data.payTime)
             if (that.data.payTime<3){
               var curPayTime = that.data.payTime+=1
               that.setData({

@@ -28,10 +28,10 @@ App({
           'Login',
           { code: res.code },
           function (json) {
-            console.log(json);
+            // console.log(json);
             if (json.success) {
               wx.setStorageSync('token', json.data.sessionId);
-              console.log(json.data.sessionId);
+              // console.log(json.data.sessionId);
               if (resolve){
                 resolve();
               }

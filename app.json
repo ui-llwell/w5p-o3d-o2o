@@ -4,6 +4,7 @@
     
    "pages/noshop/noshop",
     "pages/index/index",
+    "pages/allOrder/index",
     "pages/second/second",
     "pages/myOrder/myOrder",
     "pages/goodsDetail/index",
