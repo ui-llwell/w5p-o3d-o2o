@@ -7,14 +7,14 @@ App({
     // logs.unshift(Date.now())
     // wx.setStorageSync('logs', logs)
     // console.log(111)
-    var isDebug = false;//调试状态使用本地服务器，非调试状态使用远程服务器
+    var isDebug = false;//true调试状态使用本地服务器，非调试状态使用远程服务器
     if (!isDebug) {
       //远程域名
       wx.setStorageSync('domainName', "https://wxapp.llwell.net/api/O2O/")
     }
     else {
       //本地测试域名
-      wx.setStorageSync('domainName', "http://172.16.10.11:5000/api/O2O/")
+      wx.setStorageSync('domainName', "http://192.168.0.11:5000/api/O2O/")
     }
   },
   getLogin: function (resolve){

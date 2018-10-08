@@ -26,7 +26,7 @@ Page({
   toSweepOrder: function (){
     wx.scanCode({
       success: (res) => {
-        
+        console.log('ttt',res)
    
     app.Ajax(
       'Goods',
@@ -50,7 +50,7 @@ Page({
           // console.log('请重新扫商品码');
           wx.showModal({
             title: "温馨提示",
-            content: "请重新扫商品码",
+            content: "未找到商品，请重新扫商品条形码",
             showCancel: false,
             confirmText: "确定"
           })
